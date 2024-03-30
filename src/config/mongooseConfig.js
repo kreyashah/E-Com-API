@@ -4,7 +4,7 @@ import { CategorySchema } from "../features/product/category.schema.js";
 
 dotenv.config();
 
-const url = "mongodb://localhost:27017/ecomdb";
+const url = process.env.DB_URL;
 
 export const connectToMongoose=async ()=>{
     try{
